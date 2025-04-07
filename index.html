@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibe Oracle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Vibe Oracle</h1>
+    <div id="menu">
+      <button class="menu-btn" data-service="8ball">🔮 Magic 8 Ball</button>
+      <button class="menu-btn" data-service="luckyNumbers">🍀 Lucky Numbers</button>
+      <button class="menu-btn" data-service="fortune">🧿 Wisdom/Fortune</button>
+      <button class="menu-btn" data-service="astrology">🌌 Astrology</button>
+    </div>
+
+    <div id="serviceContainer">
+      <div id="eightBallSection" class="service-section hidden">
+        <h2>🔮 Ask the Magic 8 Ball</h2>
+        <img src="assets/8-Ball.png" alt="Magic 8 Ball" id="eightBallImg" />
+        <p id="response"></p>
+      </div>
+
+      <div id="luckyNumbersSection" class="service-section hidden">
+        <h2>🍀 Lucky Numbers</h2>
+        <button id="generateLuckyNumbers">Generate Lucky Numbers</button>
+        <p id="luckyNumbersResponse"></p>
+      </div>
+
+      <div id="fortuneSection" class="service-section hidden">
+        <h2>🧿 Wisdom/Fortune</h2>
+        <button id="generateFortune">Generate Fortune</button>
+        <p id="fortuneResponse"></p>
+      </div>
+
+      <div id="astrologySection" class="service-section hidden">
+        <h2>🌌 Astrology</h2>
+        <label for="birthdayInput">Enter your birthday (MM/DD/YYYY):</label>
+        <input type="date" id="birthdayInput" />
+        <button id="generateAstrology">Get Astrology Info</button>
+        <p id="astrologyResponse"></p>
+      </div>
+
+      <div id="comingSoonSection" class="service-section hidden">
+        <h2>🚧 Service Coming Soon...</h2>
+        <p>The vibes are still calibrating. Try again later.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
